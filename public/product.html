@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Product</title>
+</head>
+<body>
+        <!-- <form>  -->
+           <div class="form-group">
+               <label for="productName">NAME</label>
+               <input id="productName" type="text" name="pname"><br> 
+           </div>
+           <div class="form-group">
+             <label for="productPrice">PRICE</label>  
+             <input id="productPrice" type="text" name="price"><br>
+           </div>
+            <div class="form-group"> 
+              <label for="productQUANTITY">QUANTITY</label> 
+              <input id="productQuantity" type="number" min='1' name="pquantity"><br>
+            </div>
+            <label>SELECT VENDOR</label>
+            <div class="form-group">
+                 <select id="mySelect">
+                  <option id="selectedVendor">Apple</option>
+                  </select>
+            </div>
+              <!-- <input id="addProduct" type="submit" value="ADD"></input> -->
+           <button id="addProduct" class="btn btn-primary" value="ADD">ADD</button>
+           
+       
+<div class="container">
+   <table >
+       <thead>
+       <tr>
+       <th>NAME</th>
+       <th>PRICE</th>
+       <th>QUANTITY</th>
+       <th>VENDOR</th>
+       </tr>
+    </thead>
+    <tbody id="productList">
+    </tbody>
+   </table>
+</div>
+  
+   <div class="container">
+   <a href="vendor.html">BACK</a> 
+   </div>
+    <script src="jquery.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="product.js"></script>
+</body>
+</html>
